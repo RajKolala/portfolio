@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 const Hero = () => {
   return (
     <section className="border-b border-border">
-      <div className="container mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="border border-border rounded bg-card p-8">
           <div className="flex items-start gap-4 mb-6">
             <div className="p-3 bg-primary/10 rounded">

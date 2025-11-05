@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 const Header = () => {
   return (
     <header className="border-b border-border bg-card">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Network className="w-5 h-5 text-primary" />
           <span className="font-semibold text-lg">EC2 Dashboard</span>

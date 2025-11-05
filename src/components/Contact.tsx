@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 const Contact = () => {
   return (
     <section>
-      <div className="container mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="border-t border-border pt-6 mb-8">
           <h2 className="text-sm text-muted-foreground mb-1">Connection Settings</h2>
         </div>
