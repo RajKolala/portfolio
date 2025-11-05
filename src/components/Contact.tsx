@@ -46,7 +46,7 @@ const Contact = () => {
             </a>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/rajkolala/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-4 h-4 mr-2" />
               LinkedIn
             </a>
