@@ -39,17 +39,23 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-wrap gap-3 mb-8">
-          <Button size="lg" className="flex-1 md:flex-initial">
-            <Mail className="w-4 h-4 mr-2" />
-            Send Message
+          <Button size="lg" className="flex-1 md:flex-initial" asChild>
+            <a href="mailto:raj.kolala10@gmail.com">
+              <Mail className="w-4 h-4 mr-2" />
+              Send Message
+            </a>
           </Button>
-          <Button variant="outline" size="lg">
-            <Linkedin className="w-4 h-4 mr-2" />
-            LinkedIn
+          <Button variant="outline" size="lg" asChild>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="w-4 h-4 mr-2" />
+              LinkedIn
+            </a>
           </Button>
-          <Button variant="outline" size="lg">
-            <Github className="w-4 h-4 mr-2" />
-            GitHub
+          <Button variant="outline" size="lg" asChild>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+              <Github className="w-4 h-4 mr-2" />
+              GitHub
+            </a>
           </Button>
         </div>
 
