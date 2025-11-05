@@ -52,7 +52,7 @@ const Contact = () => {
             </a>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/RajKolala" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4 mr-2" />
               GitHub
             </a>
