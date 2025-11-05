@@ -1,9 +1,7 @@
 import { GraduationCap, Briefcase, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
-
 const About = () => {
-  return (
-    <section className="border-b border-border">
+  return <section className="border-b border-border">
       <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="border-t border-border pt-6 mb-8">
           <h2 className="text-sm text-muted-foreground mb-1">Instance Details</h2>
@@ -25,7 +23,7 @@ const About = () => {
             </div>
             <h3 className="text-lg font-semibold mb-3">Education</h3>
             <p className="text-base mb-1">B.S. Network Engineering</p>
-            <p className="text-sm font-mono text-code">Major: Network Engineering</p>
+            <p className="text-sm font-mono text-code">Minor: Business Administration</p>
           </Card>
 
           <Card className="p-6 border-border bg-card">
@@ -33,7 +31,7 @@ const About = () => {
               <Briefcase className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-lg font-semibold mb-3">Experience</h3>
-            <p className="text-base mb-1">5+ Years in Field</p>
+            <p className="text-base mb-1">1+ Years in Field</p>
             <p className="text-sm font-mono text-code">Enterprise & Cloud</p>
           </Card>
 
@@ -47,8 +45,6 @@ const About = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
