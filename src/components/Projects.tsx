@@ -61,7 +61,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-2 lg:flex-col">
-                  <Button size="sm" variant="outline">
+                  <Button size="sm">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     View Repo
                   </Button>
