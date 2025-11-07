@@ -7,19 +7,22 @@ const projects = [{
   status: "Active",
   title: "IPv6 Connectivity and Services Prototype",
   description: "Implementation of IPv6 network connectivity and services in a prototype environment",
-  tags: ["IPv6", "Network Services", "Protocol"]
+  tags: ["IPv6", "Network Services", "Protocol"],
+  repoUrl: "https://github.com/RajKolala/IPv6-Connectivity-and-Services-Prototype"
 }, {
   id: "i-002",
   status: "Active",
   title: "LAN-to-Internet End-to-End Prototype",
   description: "Models a realistic multi-tiered ISP infrastructure connecting home, SMB, and cellular networks to a simulated data center through Tier 3, Tier 2, and Tier 1 ISPs",
-  tags: ["ISP", "Multi-tier", "Network Architecture"]
+  tags: ["ISP", "Multi-tier", "Network Architecture"],
+  repoUrl: "https://github.com/RajKolala/Lan-to-Internet-END-to-END-Prototype"
 }, {
   id: "i-003",
   status: "Completed",
   title: "LAN-to-ISP Prototype",
   description: "Advanced multi-segment LAN-to-ISP prototype integrating home, SMB, and mobile networks through DSL, cable, and fiber last-mile systems with full logical and physical topology design",
-  tags: ["LAN", "ISP", "Last-Mile", "Topology"]
+  tags: ["LAN", "ISP", "Last-Mile", "Topology"],
+  repoUrl: "https://github.com/RajKolala/LAN-to-ISP-Prototype"
 }];
 const Projects = () => {
   return <section id="projects" className="border-b border-border">
@@ -61,9 +64,11 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-2 lg:flex-col">
-                  <Button size="sm">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    View Repo
+                  <Button size="sm" asChild>
+                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      View Repo
+                    </a>
                   </Button>
                 </div>
               </div>
