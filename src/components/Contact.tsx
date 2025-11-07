@@ -1,8 +1,18 @@
 import { Mail, MapPin, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useState } from "react";
+import TerminalDialog from "./TerminalDialog";
 
 const Contact = () => {
+  const [showTerminal, setShowTerminal] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("rajkolala10@gmail.com");
+    setShowTerminal(true);
+    setTimeout(() => setShowTerminal(false), 2000);
+  };
+
   return (
     <section>
       <div className="max-w-7xl mx-auto px-8 py-12">
@@ -39,11 +49,9 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-wrap gap-3 mb-8">
-          <Button size="lg" className="flex-1 md:flex-initial" asChild>
-            <a href="mailto:raj.kolala10@gmail.com">
-              <Mail className="w-4 h-4 mr-2" />
-              Send Message
-            </a>
+          <Button size="lg" className="flex-1 md:flex-initial" onClick={handleCopyEmail}>
+            <Mail className="w-4 h-4 mr-2" />
+            Send Message
           </Button>
           <Button variant="outline" size="lg" asChild>
             <a href="https://www.linkedin.com/in/rajkolala/" target="_blank" rel="noopener noreferrer">
@@ -66,6 +74,8 @@ const Contact = () => {
           </p>
         </Card>
       </div>
+
+      <TerminalDialog open={showTerminal} onOpenChange={setShowTerminal} />
     </section>
   );
 };
