@@ -29,7 +29,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="border-b border-border">
+    <section id="projects" className="border-b border-border">
       <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="flex items-center justify-between mb-8">
           <div>

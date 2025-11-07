@@ -43,7 +43,14 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-3">
-            <Button size="lg">
+            <Button 
+              size="lg"
+              onClick={() => {
+                document.getElementById('projects')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                });
+              }}
+            >
               View Projects
               <ChevronRight className="w-4 h-4 ml-1" />
             </Button>
