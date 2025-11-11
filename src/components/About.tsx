@@ -128,6 +128,18 @@ const About = () => {
               <div className="animate-fade-in space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
+                    <h4 className="text-base font-semibold mb-2">Google Cybersecurity Professional Certificate</h4>
+                    <p className="text-sm text-muted-foreground mb-1">Google Career Certificates</p>
+                    <p className="text-sm font-mono text-code mb-3">November 2025</p>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      9-course series covering cybersecurity fundamentals, SIEM tools, risk management, and threat mitigation. Gained hands-on experience with Python, Linux, and SQL for security operations.
+                    </p>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded font-mono">4.8★ Rating</span>
+                      <span className="text-xs text-muted-foreground">Beginner Level</span>
+                    </div>
+                  </div>
+                  <div>
                     <h4 className="text-base font-semibold mb-2">CCNA: Enterprise Networking, Security, and Automation</h4>
                     <p className="text-sm text-muted-foreground mb-1">Cisco Networking Academy</p>
                     <p className="text-sm font-mono text-code mb-3">March 2025</p>
@@ -149,14 +161,6 @@ const About = () => {
                     <p className="text-sm font-mono text-code mb-3">June 2024</p>
                     <p className="text-sm text-muted-foreground">
                       Implemented IoT architecture with MQTT, CoAP protocols. Enhanced network resilience by 90% through edge device authentication
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-semibold mb-2">SQL Certification</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Database Management</p>
-                    <p className="text-sm font-mono text-code mb-3">Certified</p>
-                    <p className="text-sm text-muted-foreground">
-                      Database querying and management fundamentals
                     </p>
                   </div>
                 </div>
