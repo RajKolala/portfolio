@@ -37,27 +37,28 @@ const About = () => {
             <h3 className="text-lg font-semibold mb-3">Education</h3>
             {expanded !== 'education' ? (
               <>
-                <p className="text-base mb-1">B.S. Network Engineering</p>
+                <p className="text-base mb-1">B.E. Computer Networking</p>
                 <p className="text-sm font-mono text-code">Minor: Business Administration</p>
               </>
             ) : (
               <div className="animate-fade-in space-y-4">
                 <div>
-                  <h4 className="text-base font-semibold mb-2">B.S. Network Engineering</h4>
-                  <p className="text-sm text-muted-foreground mb-1">Minor: Business Administration</p>
-                  <p className="text-sm font-mono text-code mb-3">2020 - 2024 | GPA: 3.8/4.0</p>
+                  <h4 className="text-base font-semibold mb-2">Bachelor of Engineering, Computer Networking System Management</h4>
+                  <p className="text-sm text-muted-foreground mb-1">San Jose State University</p>
+                  <p className="text-sm font-mono text-code mb-3">Expected May 2027 | Minor: Business Administration</p>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Focused on advanced networking protocols, cloud infrastructure, and enterprise network design. 
-                    Completed capstone project on IPv6 implementation and multi-tier ISP infrastructure modeling.
+                    Focused on network administration, IoT systems, and enterprise network design with a strong foundation in programming and business operations.
                   </p>
                 </div>
                 <div className="border-t border-border pt-4">
-                  <h5 className="text-sm font-semibold mb-2">Key Coursework</h5>
+                  <h5 className="text-sm font-semibold mb-2">Relevant Coursework</h5>
                   <div className="grid grid-cols-2 gap-2">
-                    <p className="text-sm text-muted-foreground">• Advanced Network Design</p>
-                    <p className="text-sm text-muted-foreground">• Cloud Computing Architecture</p>
-                    <p className="text-sm text-muted-foreground">• Network Security</p>
-                    <p className="text-sm text-muted-foreground">• Data Communications</p>
+                    <p className="text-sm text-muted-foreground">• Network Administration</p>
+                    <p className="text-sm text-muted-foreground">• Intro to Networks</p>
+                    <p className="text-sm text-muted-foreground">• Intro to IoT</p>
+                    <p className="text-sm text-muted-foreground">• Analog and Digital Circuits</p>
+                    <p className="text-sm text-muted-foreground">• Intro to Python</p>
+                    <p className="text-sm text-muted-foreground">• Business Statistics</p>
                   </div>
                 </div>
               </div>
@@ -76,29 +77,32 @@ const About = () => {
             <h3 className="text-lg font-semibold mb-3">Experience</h3>
             {expanded !== 'experience' ? (
               <>
-                <p className="text-base mb-1">1+ Years in Field</p>
-                <p className="text-sm font-mono text-code">Enterprise & Cloud</p>
+                <p className="text-base mb-1">Network Engineering Consultant</p>
+                <p className="text-sm font-mono text-code">Cisco | 2023</p>
               </>
             ) : (
               <div className="animate-fade-in space-y-4">
                 <div>
-                  <h4 className="text-base font-semibold mb-1">Network Engineer</h4>
-                  <p className="text-sm text-muted-foreground mb-1">Tech Company | San Francisco, CA</p>
-                  <p className="text-sm font-mono text-code mb-3">2023 - Present</p>
+                  <h4 className="text-base font-semibold mb-1">Network Engineering Consultant</h4>
+                  <p className="text-sm text-muted-foreground mb-1">Cisco | Santa Clara, CA</p>
+                  <p className="text-sm font-mono text-code mb-3">July 2023 - Nov 2023</p>
                   <ul className="text-sm text-muted-foreground leading-relaxed space-y-2">
-                    <li>• Designed and implemented IPv6 connectivity solutions for enterprise clients</li>
-                    <li>• Developed multi-tier ISP infrastructure prototypes and network architectures</li>
-                    <li>• Optimized cloud network performance and reduced latency by 30%</li>
-                    <li>• Collaborated with cross-functional teams on network security implementations</li>
+                    <li>• Collaborated with 150+ IT professionals and educators on data literacy, cybersecurity, and generative AI workshops</li>
+                    <li>• Designed breakout sessions improving AI tool understanding—achieved 92% satisfaction rate</li>
+                    <li>• Contributed to securing large-scale systems and diagnosing data anomalies across multi-zetabyte infrastructures</li>
+                    <li>• Networked with 20+ organizations, gaining perspectives on data-driven problem solving and cybersecurity</li>
                   </ul>
                 </div>
                 <div className="border-t border-border pt-4">
-                  <h5 className="text-sm font-semibold mb-2">Technologies Used</h5>
+                  <h5 className="text-sm font-semibold mb-2">IoT Project (Nov 2024 - Present)</h5>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+                    Engineered smart home ecosystem with 15+ Zigbee & Z-Wave devices through Home Assistant on Raspberry Pi 5, achieving 95% uptime
+                  </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">AWS</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Cisco</span>
                     <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Python</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">BGP</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Docker</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Zigbee</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Ubuntu</span>
                   </div>
                 </div>
               </div>
@@ -117,42 +121,42 @@ const About = () => {
             <h3 className="text-lg font-semibold mb-3">Certifications</h3>
             {expanded !== 'certifications' ? (
               <>
-                <p className="text-base mb-1">AWS, CCNA, CompTIA</p>
-                <p className="text-sm font-mono text-code">Multiple Specializations</p>
+                <p className="text-base mb-1">CCNA Certifications</p>
+                <p className="text-sm font-mono text-code">Cisco & SQL</p>
               </>
             ) : (
               <div className="animate-fade-in space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <h4 className="text-base font-semibold mb-2">AWS Certified Solutions Architect</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Amazon Web Services</p>
-                    <p className="text-sm font-mono text-code mb-3">Issued: 2023 | Valid until: 2026</p>
+                    <h4 className="text-base font-semibold mb-2">CCNA: Enterprise Networking, Security, and Automation</h4>
+                    <p className="text-sm text-muted-foreground mb-1">Cisco Networking Academy</p>
+                    <p className="text-sm font-mono text-code mb-3">March 2025</p>
                     <p className="text-sm text-muted-foreground">
-                      Demonstrates expertise in designing distributed systems on AWS
+                      Designed enterprise-grade networks with IPv4/IPv6 routing. Built Python automation scripts improving deployment speed by 40%
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-base font-semibold mb-2">CCNA (Cisco Certified Network Associate)</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Cisco</p>
-                    <p className="text-sm font-mono text-code mb-3">Issued: 2023 | Valid until: 2026</p>
+                    <h4 className="text-base font-semibold mb-2">CCNA: Switching, Routing, and Wireless Essentials</h4>
+                    <p className="text-sm text-muted-foreground mb-1">Cisco Networking Academy</p>
+                    <p className="text-sm font-mono text-code mb-3">June 2024</p>
                     <p className="text-sm text-muted-foreground">
-                      Foundation in network fundamentals and Cisco technologies
+                      Configured Layer 2/Layer 3 switches, routers, and wireless LANs with zero packet loss under test loads
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-base font-semibold mb-2">CompTIA Network+</h4>
-                    <p className="text-sm text-muted-foreground mb-1">CompTIA</p>
-                    <p className="text-sm font-mono text-code mb-3">Issued: 2022 | Valid until: 2025</p>
+                    <h4 className="text-base font-semibold mb-2">CCNA: IoT Essentials</h4>
+                    <p className="text-sm text-muted-foreground mb-1">Cisco Networking Academy</p>
+                    <p className="text-sm font-mono text-code mb-3">June 2024</p>
                     <p className="text-sm text-muted-foreground">
-                      Core networking concepts and troubleshooting skills
+                      Implemented IoT architecture with MQTT, CoAP protocols. Enhanced network resilience by 90% through edge device authentication
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-base font-semibold mb-2">CompTIA Security+</h4>
-                    <p className="text-sm text-muted-foreground mb-1">CompTIA</p>
-                    <p className="text-sm font-mono text-code mb-3">Issued: 2022 | Valid until: 2025</p>
+                    <h4 className="text-base font-semibold mb-2">SQL Certification</h4>
+                    <p className="text-sm text-muted-foreground mb-1">Database Management</p>
+                    <p className="text-sm font-mono text-code mb-3">Certified</p>
                     <p className="text-sm text-muted-foreground">
-                      Network security and risk management fundamentals
+                      Database querying and management fundamentals
                     </p>
                   </div>
                 </div>
