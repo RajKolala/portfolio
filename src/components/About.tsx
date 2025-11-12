@@ -1,14 +1,11 @@
 import { GraduationCap, Briefcase, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
-
 const About = () => {
   const [expanded, setExpanded] = useState<string | null>(null);
-
   const handleCardClick = (section: string) => {
     setExpanded(expanded === section ? null : section);
   };
-
   return <section className="border-b border-border">
       <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="border-t border-border pt-6 mb-8">
@@ -25,23 +22,15 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card 
-            className={`p-6 border-border bg-card cursor-pointer transition-all duration-300 hover:scale-105 ${
-              expanded === 'education' ? 'md:col-span-3 md:scale-100' : expanded ? 'md:hidden' : ''
-            }`}
-            onClick={() => handleCardClick('education')}
-          >
+          <Card className={`p-6 border-border bg-card cursor-pointer transition-all duration-300 hover:scale-105 ${expanded === 'education' ? 'md:col-span-3 md:scale-100' : expanded ? 'md:hidden' : ''}`} onClick={() => handleCardClick('education')}>
             <div className="p-3 bg-primary/10 rounded w-fit mb-4">
               <GraduationCap className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-lg font-semibold mb-3">Education</h3>
-            {expanded !== 'education' ? (
-              <>
+            {expanded !== 'education' ? <>
                 <p className="text-base mb-1">B.E. Computer Networking</p>
                 <p className="text-sm font-mono text-code">Minor: Business Administration</p>
-              </>
-            ) : (
-              <div className="animate-fade-in space-y-4">
+              </> : <div className="animate-fade-in space-y-4">
                 <div>
                   <h4 className="text-base font-semibold mb-2">Bachelor of Engineering, Computer Networking System Management</h4>
                   <p className="text-sm text-muted-foreground mb-1">San Jose State University</p>
@@ -61,27 +50,18 @@ const About = () => {
                     <p className="text-sm text-muted-foreground">• Business Statistics</p>
                   </div>
                 </div>
-              </div>
-            )}
+              </div>}
           </Card>
 
-          <Card 
-            className={`p-6 border-border bg-card cursor-pointer transition-all duration-300 hover:scale-105 ${
-              expanded === 'experience' ? 'md:col-span-3 md:scale-100' : expanded ? 'md:hidden' : ''
-            }`}
-            onClick={() => handleCardClick('experience')}
-          >
+          <Card className={`p-6 border-border bg-card cursor-pointer transition-all duration-300 hover:scale-105 ${expanded === 'experience' ? 'md:col-span-3 md:scale-100' : expanded ? 'md:hidden' : ''}`} onClick={() => handleCardClick('experience')}>
             <div className="p-3 bg-primary/10 rounded w-fit mb-4">
               <Briefcase className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-lg font-semibold mb-3">Experience</h3>
-            {expanded !== 'experience' ? (
-              <>
+            {expanded !== 'experience' ? <>
                 <p className="text-base mb-1">Network Engineering Consultant</p>
                 <p className="text-sm font-mono text-code">Cisco | 2023</p>
-              </>
-            ) : (
-              <div className="animate-fade-in space-y-4">
+              </> : <div className="animate-fade-in space-y-4">
                 <div>
                   <h4 className="text-base font-semibold mb-1">Network Engineering Consultant</h4>
                   <p className="text-sm text-muted-foreground mb-1">Cisco | Santa Clara, CA</p>
@@ -105,27 +85,18 @@ const About = () => {
                     <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Ubuntu</span>
                   </div>
                 </div>
-              </div>
-            )}
+              </div>}
           </Card>
 
-          <Card 
-            className={`p-6 border-border bg-card cursor-pointer transition-all duration-300 hover:scale-105 ${
-              expanded === 'certifications' ? 'md:col-span-3 md:scale-100' : expanded ? 'md:hidden' : ''
-            }`}
-            onClick={() => handleCardClick('certifications')}
-          >
+          <Card className={`p-6 border-border bg-card cursor-pointer transition-all duration-300 hover:scale-105 ${expanded === 'certifications' ? 'md:col-span-3 md:scale-100' : expanded ? 'md:hidden' : ''}`} onClick={() => handleCardClick('certifications')}>
             <div className="p-3 bg-primary/10 rounded w-fit mb-4">
               <Award className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-lg font-semibold mb-3">Certifications</h3>
-            {expanded !== 'certifications' ? (
-              <>
-                <p className="text-base mb-1">CCNA Certifications</p>
+            {expanded !== 'certifications' ? <>
+                <p className="text-base mb-1">CCNA & Google Certifications</p>
                 <p className="text-sm font-mono text-code">Cisco & SQL</p>
-              </>
-            ) : (
-              <div className="animate-fade-in space-y-4">
+              </> : <div className="animate-fade-in space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <h4 className="text-base font-semibold mb-2">Google Cybersecurity Professional Certificate</h4>
@@ -160,8 +131,7 @@ const About = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            )}
+              </div>}
           </Card>
         </div>
       </div>
