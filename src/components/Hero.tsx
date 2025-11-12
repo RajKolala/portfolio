@@ -54,7 +54,11 @@ const Hero = () => {
               View Projects
               <ChevronRight className="w-4 h-4 ml-1" />
             </Button>
-            <Button variant="outline" size="lg">
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={() => window.open('https://drive.google.com/file/d/1En0LibxSOTr0-W50_O4Zc_fzC4pC_9IZ/view?usp=sharing', '_blank')}
+            >
               Download Resume
             </Button>
           </div>
