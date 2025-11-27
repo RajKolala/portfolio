@@ -57,7 +57,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              onClick={() => window.open('https://drive.google.com/file/d/1En0LibxSOTr0-W50_O4Zc_fzC4pC_9IZ/view?usp=sharing', '_blank')}
+              onClick={() => window.open('/Raj_Kolala_Resume.pdf', '_blank')}
             >
               Download Resume
             </Button>
