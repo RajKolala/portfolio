@@ -107,7 +107,7 @@ const About = () => {
                     </p>
                   </div>
                   <div>
-                    <h4 className="text-base font-semibold mb-2">AWS Academy: Cloud Architecting</h4>
+                    <h4 className="text-base font-semibold mb-2">AWS Academy: Cloud Architecting Certification</h4>
                     <p className="text-sm text-muted-foreground mb-1">Amazon Web Services Academy</p>
                     <p className="text-sm font-mono text-code mb-3">November 2025</p>
                     <p className="text-sm text-muted-foreground">
