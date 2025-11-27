@@ -107,6 +107,14 @@ const About = () => {
                     </p>
                   </div>
                   <div>
+                    <h4 className="text-base font-semibold mb-2">AWS Academy: Cloud Architecting</h4>
+                    <p className="text-sm text-muted-foreground mb-1">AWS Academy</p>
+                    <p className="text-sm font-mono text-code mb-3">November 2025</p>
+                    <p className="text-sm text-muted-foreground">
+                      Completed AWS Academy's Cloud Architecting coursework covering core AWS services, cloud solution design, and best practices for reliability, scalability, and cost optimization. Gained hands-on experience with VPC design, compute and storage services (EC2, Lambda, S3), IAM governance, load balancing, and cloud security fundamentals.
+                    </p>
+                  </div>
+                  <div>
                     <h4 className="text-base font-semibold mb-2">CCNA: Enterprise Networking, Security, and Automation</h4>
                     <p className="text-sm text-muted-foreground mb-1">Cisco Networking Academy</p>
                     <p className="text-sm font-mono text-code mb-3">March 2025</p>
@@ -120,14 +128,6 @@ const About = () => {
                     <p className="text-sm font-mono text-code mb-3">June 2024</p>
                     <p className="text-sm text-muted-foreground">
                       Configured Layer 2/Layer 3 switches, routers, and wireless LANs with zero packet loss under test loads
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-semibold mb-2">CCNA: IoT Essentials</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Cisco Networking Academy</p>
-                    <p className="text-sm font-mono text-code mb-3">June 2024</p>
-                    <p className="text-sm text-muted-foreground">
-                      Implemented IoT architecture with MQTT, CoAP protocols. Enhanced network resilience by 90% through edge device authentication
                     </p>
                   </div>
                 </div>
