@@ -108,7 +108,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-base font-semibold mb-2">AWS Academy: Cloud Architecting</h4>
-                    <p className="text-sm text-muted-foreground mb-1">AWS Academy</p>
+                    <p className="text-sm text-muted-foreground mb-1">Amazon Web Services Academy</p>
                     <p className="text-sm font-mono text-code mb-3">November 2025</p>
                     <p className="text-sm text-muted-foreground">
                       Completed AWS Academy's Cloud Architecting coursework covering core AWS services, cloud solution design, and best practices for reliability, scalability, and cost optimization. Gained hands-on experience with VPC design, compute and storage services (EC2, Lambda, S3), IAM governance, load balancing, and cloud security fundamentals.
