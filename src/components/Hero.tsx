@@ -14,7 +14,7 @@ const Hero = () => {
             <div>
               <h1 className="text-4xl font-bold mb-2">Raj Kolala</h1>
               <p className="text-xl text-muted-foreground mb-3">
-                Networking Engineer & Minor in Business Administration
+                Computer Network Engineer & Minor in Business Administration
               </p>
               <p className="text-sm font-mono text-primary">
                 Instance ID: portfolio-prod-001
