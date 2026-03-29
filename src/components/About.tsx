@@ -74,15 +74,19 @@ const About = () => {
                   </ul>
                 </div>
                 <div className="border-t border-border pt-4">
-                  <h5 className="text-sm font-semibold mb-2">IoT Project (Nov 2024 - Present)</h5>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-                    Engineered smart home ecosystem with 15+ Zigbee & Z-Wave devices through Home Assistant on Raspberry Pi 5, achieving 95% uptime
-                  </p>
+                  <h5 className="text-sm font-semibold mb-2">Clarity – See Yourself | Independent iOS Developer (Mar 2026)</h5>
+                  <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 mb-3">
+                    <li>• Architected real-time peer-to-peer camera streaming between two iOS devices using WebSocket protocol with sub-second latency</li>
+                    <li>• Designed session management system using unique 6-character room codes to establish and maintain live device connections</li>
+                    <li>• Built Node.js server handling concurrent WebSocket connections for live video feed synchronization between devices</li>
+                    <li>• Independently managed full deployment pipeline: EAS cloud builds, Apple Developer certificates, provisioning profiles, and App Store submission</li>
+                    <li>• Published to Apple App Store — 1.0 release (App ID: 6761284470)</li>
+                  </ul>
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Python</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Docker</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Zigbee</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Ubuntu</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">React Native</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Expo</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">WebSocket</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Node.js</span>
                   </div>
                 </div>
               </div>}
