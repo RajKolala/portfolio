@@ -63,18 +63,8 @@ const About = () => {
                 <p className="text-sm font-mono text-code">Cisco | 2023</p>
               </> : <div className="animate-fade-in space-y-4">
                 <div>
-                  <h4 className="text-base font-semibold mb-1">Network Engineering Consultant</h4>
-                  <p className="text-sm text-muted-foreground mb-1">Cisco | Santa Clara, CA</p>
-                  <p className="text-sm font-mono text-code mb-3">July 2023 - Nov 2023</p>
-                  <ul className="text-sm text-muted-foreground leading-relaxed space-y-2">
-                    <li>• Collaborated with 150+ IT professionals and educators on data literacy, cybersecurity, and generative AI workshops</li>
-                    <li>• Designed breakout sessions improving AI tool understanding—achieved 92% satisfaction rate</li>
-                    <li>• Contributed to securing large-scale systems and diagnosing data anomalies across multi-zetabyte infrastructures</li>
-                    <li>• Networked with 20+ organizations, gaining perspectives on data-driven problem solving and cybersecurity</li>
-                  </ul>
-                </div>
-                <div className="border-t border-border pt-4">
-                  <h5 className="text-sm font-semibold mb-2">Clarity – See Yourself | Independent iOS Developer (Mar 2026)</h5>
+                  <h4 className="text-base font-semibold mb-1">Clarity – See Yourself | Independent iOS Developer</h4>
+                  <p className="text-sm font-mono text-code mb-3">Mar 2026</p>
                   <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 mb-3">
                     <li>• Architected real-time peer-to-peer camera streaming between two iOS devices using WebSocket protocol with sub-second latency</li>
                     <li>• Designed session management system using unique 6-character room codes to establish and maintain live device connections</li>
@@ -89,6 +79,17 @@ const About = () => {
                     <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">WebSocket</span>
                     <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Node.js</span>
                   </div>
+                </div>
+                <div className="border-t border-border pt-4">
+                  <h4 className="text-base font-semibold mb-1">Network Engineering Consultant</h4>
+                  <p className="text-sm text-muted-foreground mb-1">Cisco | Santa Clara, CA</p>
+                  <p className="text-sm font-mono text-code mb-3">July 2023 - Nov 2023</p>
+                  <ul className="text-sm text-muted-foreground leading-relaxed space-y-2">
+                    <li>• Collaborated with 150+ IT professionals and educators on data literacy, cybersecurity, and generative AI workshops</li>
+                    <li>• Designed breakout sessions improving AI tool understanding—achieved 92% satisfaction rate</li>
+                    <li>• Contributed to securing large-scale systems and diagnosing data anomalies across multi-zetabyte infrastructures</li>
+                    <li>• Networked with 20+ organizations, gaining perspectives on data-driven problem solving and cybersecurity</li>
+                  </ul>
                 </div>
               </div>}
           </Card>
