@@ -119,6 +119,14 @@ const About = () => {
                     <p className="text-sm text-muted-foreground">
                       AWS cloud architecture fundamentals with hands-on experience in EC2, Lambda, S3, VPC design, IAM governance, load balancing, and security best practices.
                     </p>
+                   </div>
+                  <div>
+                    <h4 className="text-base font-semibold mb-2">Cisco: CyberOps Associate</h4>
+                    <p className="text-sm text-muted-foreground mb-1">Linux, Wireshark, Security Onion, SIEM Tools, TCP/IP</p>
+                    <p className="text-sm font-mono text-code mb-3">May 2025</p>
+                    <p className="text-sm text-muted-foreground">
+                      Demonstrated proficiency in security operations center (SOC) workflows, including threat monitoring, incident response, and network intrusion analysis; applied cybersecurity fundamentals across endpoint security, cryptography, and security policies.
+                    </p>
                   </div>
                   <div>
                     <h4 className="text-base font-semibold mb-2">CCNA: Enterprise Networking, Security, and Automation</h4>
