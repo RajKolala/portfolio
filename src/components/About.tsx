@@ -123,7 +123,7 @@ const About = () => {
                   <div>
                     <h4 className="text-base font-semibold mb-2">Cisco: CyberOps Associate</h4>
                     <p className="text-sm text-muted-foreground mb-1">Linux, Wireshark, Security Onion, SIEM Tools, TCP/IP</p>
-                    <p className="text-sm font-mono text-code mb-3">May 2025</p>
+                    <p className="text-sm font-mono text-code mb-3">May 2026</p>
                     <p className="text-sm text-muted-foreground">
                       Demonstrated proficiency in security operations center (SOC) workflows, including threat monitoring, incident response, and network intrusion analysis; applied cybersecurity fundamentals across endpoint security, cryptography, and security policies.
                     </p>
