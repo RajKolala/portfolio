@@ -106,7 +106,7 @@ const About = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <h4 className="text-base font-semibold mb-2">Cisco: CyberOps Associate</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Linux, Wireshark, Security Onion, SIEM Tools, TCP/IP</p>
+                    <p className="text-sm text-muted-foreground mb-1"><em>Cisco Networking Academy</em></p>
                     <p className="text-sm font-mono text-code mb-3">May 2026</p>
                     <p className="text-sm text-muted-foreground">
                       Demonstrated proficiency in security operations center (SOC) workflows, including threat monitoring, incident response, and network intrusion analysis; applied cybersecurity fundamentals across endpoint security, cryptography, and security policies.
@@ -114,7 +114,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-base font-semibold mb-2">Google Cybersecurity Professional Certificate</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Google Career Certificates</p>
+                    <p className="text-sm text-muted-foreground mb-1"><em>Google Career Certificates</em></p>
                     <p className="text-sm font-mono text-code mb-3">November 2025</p>
                     <p className="text-sm text-muted-foreground">
                       9-course series covering cybersecurity fundamentals, SIEM tools, risk management, and threat mitigation. Gained hands-on experience with Python, Linux, and SQL for security operations.
@@ -122,7 +122,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-base font-semibold mb-2">AWS Academy: Cloud Architecting Certification</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Amazon Web Services Academy</p>
+                    <p className="text-sm text-muted-foreground mb-1"><em>Amazon Web Services Academy</em></p>
                     <p className="text-sm font-mono text-code mb-3">November 2025</p>
                     <p className="text-sm text-muted-foreground">
                       AWS cloud architecture fundamentals with hands-on experience in EC2, Lambda, S3, VPC design, IAM governance, load balancing, and security best practices.
@@ -130,7 +130,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-base font-semibold mb-2">CCNA: Enterprise Networking, Security, and Automation</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Cisco Networking Academy</p>
+                    <p className="text-sm text-muted-foreground mb-1"><em>Cisco Networking Academy</em></p>
                     <p className="text-sm font-mono text-code mb-3">March 2025</p>
                     <p className="text-sm text-muted-foreground">
                       Designed enterprise-grade networks with IPv4/IPv6 routing. Built Python automation scripts improving deployment speed by 40%
@@ -138,7 +138,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-base font-semibold mb-2">CCNA: Switching, Routing, and Wireless Essentials</h4>
-                    <p className="text-sm text-muted-foreground mb-1">Cisco Networking Academy</p>
+                    <p className="text-sm text-muted-foreground mb-1"><em>Cisco Networking Academy</em></p>
                     <p className="text-sm font-mono text-code mb-3">June 2024</p>
                     <p className="text-sm text-muted-foreground">
                       Configured Layer 2/Layer 3 switches, routers, and wireless LANs with zero packet loss under test loads
