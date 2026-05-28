@@ -71,7 +71,7 @@ const About = () => {
                     <li>• Built Node.js server handling concurrent WebSocket connections for live video feed synchronization between devices</li>
                     <li>• Independently managed full deployment pipeline: EAS cloud builds, Apple Developer certificates, provisioning profiles, and App Store submission</li>
                     <li>• Published to Apple App Store — 1.0 release (App ID: 6761284470)</li>
-                    <li>• Designed and deployed a companion support website with a live privacy policy endpoint at <a href="https://clarityseeyourself.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">clarityseeyourself.com</a></li>
+                    <li>• Designed and deployed a companion support website with a live privacy policy endpoint at <a href="https://clarityseeyourself.net" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">clarityseeyourself.net</a></li>
                   </ul>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">React Native</span>
