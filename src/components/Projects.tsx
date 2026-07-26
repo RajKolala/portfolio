@@ -9,14 +9,14 @@ const projects = [{
   title: "Clarity – See Yourself",
   description: "Real-time peer-to-peer iOS camera mirroring app using WebSocket over a Node.js relay server, shipped to the App Store with a companion support website at clarityseeyourself.net.",
   tags: ["React Native", "Expo", "WebSocket", "Node.js", "EAS Build"],
-  repoUrl: "#"
+  repoUrl: "https://github.com/RajKolala/Clarity---See-Yourself-IOS-App"
 }, {
   id: "i-001",
   status: "Completed",
   title: "Cardiovascular Disease Classification & Prediction",
   description: "Built a binary ML classifier to predict cardiovascular disease across 70,000 patient records, achieving 73.7% accuracy with Random Forest using RandomizedSearchCV cross-validation.",
   tags: ["Python", "Pandas", "scikit-learn"],
-  repoUrl: "#"
+  repoUrl: "https://github.com/RajKolala/Cardiovascular-Disease-Classifier-"
 }, {
   id: "i-002",
   status: "Active",
