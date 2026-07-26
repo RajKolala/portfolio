@@ -43,11 +43,15 @@ const About = () => {
                   <h5 className="text-sm font-semibold mb-2">Relevant Coursework</h5>
                   <div className="grid grid-cols-2 gap-2">
                     <p className="text-sm text-muted-foreground">• Network Administration</p>
-                    <p className="text-sm text-muted-foreground">• Intro to Networks</p>
-                    <p className="text-sm text-muted-foreground">• Intro to IoT</p>
+                    <p className="text-sm text-muted-foreground">• Python</p>
                     <p className="text-sm text-muted-foreground">• Analog and Digital Circuits</p>
-                    <p className="text-sm text-muted-foreground">• Intro to Python</p>
+                    <p className="text-sm text-muted-foreground">• IoT</p>
+                    <p className="text-sm text-muted-foreground">• Calculus</p>
+                    <p className="text-sm text-muted-foreground">• Linear Algebra</p>
+                    <p className="text-sm text-muted-foreground">• Public Speaking</p>
                     <p className="text-sm text-muted-foreground">• Business Statistics</p>
+                    <p className="text-sm text-muted-foreground">• Machine Learning Technology and Applications</p>
+                    <p className="text-sm text-muted-foreground">• Network Security & Prevention Management</p>
                   </div>
                 </div>
               </div>}
