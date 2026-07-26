@@ -40,6 +40,8 @@ const projects = [{
   repoUrl: "https://github.com/RajKolala/LAN-to-ISP-Prototype"
 }];
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.slice(0, 3);
   return <section id="projects" className="border-b border-border">
       <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="flex items-center justify-between mb-8">
@@ -48,12 +50,13 @@ const Projects = () => {
             <p className="text-sm font-mono text-muted-foreground">
               Running Instances (5)
               <span className="ml-4 text-code">Region: us-east-1</span>
+              <span className="ml-4 text-code">{showAll ? "Showing: all" : "Showing: 3"}</span>
             </p>
           </div>
         </div>
 
         <div className="space-y-4">
-          {projects.map(project => <Card key={project.id} className="p-6 border-border bg-card">
+          {visibleProjects.map(project => <Card key={project.id} className="p-6 border-border bg-card">
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-3">
@@ -89,6 +92,18 @@ const Projects = () => {
               </div>
             </Card>)}
         </div>
+
+        {projects.length > 3 && <div className="mt-6 flex justify-center">
+            <Button variant="outline" size="sm" onClick={() => setShowAll(!showAll)} className="font-mono border-border hover:bg-muted/50 hover:text-primary">
+              {showAll ? <>
+                  <ChevronUp className="w-4 h-4 mr-2" />
+                  Show Less
+                </> : <>
+                  <ChevronDown className="w-4 h-4 mr-2" />
+                  Show More
+                </>}
+            </Button>
+          </div>}
       </div>
     </section>;
 };
