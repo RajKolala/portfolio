@@ -3,21 +3,35 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 const projects = [{
+  id: "i-000",
+  status: "Active",
+  title: "Clarity – See Yourself",
+  description: "Real-time peer-to-peer iOS camera mirroring app using WebSocket over a Node.js relay server, shipped to the App Store with a companion support website at clarityseeyourself.net.",
+  tags: ["React Native", "Expo", "WebSocket", "Node.js", "EAS Build"],
+  repoUrl: "#"
+}, {
   id: "i-001",
+  status: "Completed",
+  title: "Cardiovascular Disease Classification & Prediction",
+  description: "Built a binary ML classifier to predict cardiovascular disease across 70,000 patient records, achieving 73.7% accuracy with Random Forest using RandomizedSearchCV cross-validation.",
+  tags: ["Python", "Pandas", "scikit-learn"],
+  repoUrl: "#"
+}, {
+  id: "i-002",
   status: "Active",
   title: "IPv6 Connectivity and Services Prototype",
   description: "Implementation of IPv6 network connectivity and services in a prototype environment",
   tags: ["IPv6", "Network Services", "Protocol"],
   repoUrl: "https://github.com/RajKolala/IPv6-Connectivity-and-Services-Prototype"
 }, {
-  id: "i-002",
+  id: "i-003",
   status: "Active",
   title: "LAN-to-Internet End-to-End Prototype",
   description: "Models a realistic multi-tiered ISP infrastructure connecting home, SMB, and cellular networks to a simulated data center through Tier 3, Tier 2, and Tier 1 ISPs",
   tags: ["ISP", "Multi-tier", "Network Architecture"],
   repoUrl: "https://github.com/RajKolala/Lan-to-Internet-END-to-END-Prototype"
 }, {
-  id: "i-003",
+  id: "i-004",
   status: "Completed",
   title: "LAN-to-ISP Prototype",
   description: "Advanced multi-segment LAN-to-ISP prototype integrating home, SMB, and mobile networks through DSL, cable, and fiber last-mile systems with full logical and physical topology design",
@@ -31,7 +45,7 @@ const Projects = () => {
           <div>
             <h2 className="text-2xl font-bold mb-1">Featured Projects</h2>
             <p className="text-sm font-mono text-muted-foreground">
-              Running Instances (4)
+              Running Instances (5)
               <span className="ml-4 text-code">Region: us-east-1</span>
             </p>
           </div>
