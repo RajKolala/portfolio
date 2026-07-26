@@ -1,7 +1,8 @@
-import { Code, ExternalLink } from "lucide-react";
+import { Code, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useState } from "react";
 const projects = [{
   id: "i-000",
   status: "Active",
