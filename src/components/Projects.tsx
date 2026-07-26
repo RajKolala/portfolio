@@ -45,7 +45,7 @@ const Projects = () => {
           <div>
             <h2 className="text-2xl font-bold mb-1">Featured Projects</h2>
             <p className="text-sm font-mono text-muted-foreground">
-              Running Instances (4)
+              Running Instances (5)
               <span className="ml-4 text-code">Region: us-east-1</span>
             </p>
           </div>
