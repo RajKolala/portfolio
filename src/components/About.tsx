@@ -125,8 +125,8 @@ const About = () => {
             </div>
             <h3 className="text-lg font-semibold mb-3">Certifications</h3>
             {expanded !== 'certifications' ? <>
-                <p className="text-base mb-1">CCNA & Google Certifications</p>
-                <p className="text-sm font-mono text-code">Cisco & SQL</p>
+                <p className="text-base mb-1">CCNA, Google & AWS</p>
+                <p className="text-sm font-mono text-code">Cisco Networking Academy, Amazon Web Services Academy, and Google Career Certificates</p>
               </> : <div className="animate-fade-in space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
