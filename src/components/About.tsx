@@ -63,10 +63,10 @@ const About = () => {
             </div>
             <h3 className="text-lg font-semibold mb-3">Experience</h3>
             {expanded !== 'experience' ? <>
-                <p className="text-base mb-1">Network Engineering Consultant</p>
-                <p className="text-base mb-1">Independent iOS Developer</p>
                 <p className="text-base mb-1">Systems & Infrastructure Intern</p>
-                <p className="text-sm font-mono text-code">Cisco · Clarity · Elide</p>
+                <p className="text-base mb-1">Independent iOS Developer</p>
+                <p className="text-base mb-1">Network Engineering Consultant</p>
+                <p className="text-sm font-mono text-code">Elide · Clarity · Cisco</p>
               </> : <div className="animate-fade-in space-y-4">
                 <div>
                   <h4 className="text-base font-semibold mb-1">Systems & Infrastructure Intern</h4>
