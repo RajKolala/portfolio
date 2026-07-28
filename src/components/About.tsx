@@ -64,9 +64,30 @@ const About = () => {
             <h3 className="text-lg font-semibold mb-3">Experience</h3>
             {expanded !== 'experience' ? <>
                 <p className="text-base mb-1">Network Engineering Consultant</p>
-                <p className="text-sm font-mono text-code">Cisco | 2023</p>
+                <p className="text-base mb-1">Independent iOS Developer</p>
+                <p className="text-base mb-1">Systems & Infrastructure Intern</p>
+                <p className="text-sm font-mono text-code">Cisco · Clarity · Elide</p>
               </> : <div className="animate-fade-in space-y-4">
                 <div>
+                  <h4 className="text-base font-semibold mb-1">Systems & Infrastructure Intern</h4>
+                  <p className="text-sm text-muted-foreground mb-1">Elide | San Jose, CA</p>
+                  <p className="text-sm font-mono text-code mb-3">May 2026 - Aug 2026</p>
+                  <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 mb-3">
+                    <li>• Maintained and optimized CI/CD pipelines using GitHub Actions to automate build, test, and validation workflows across Kotlin, Java, JavaScript, and TypeScript targets</li>
+                    <li>• Managed and updated Docker images for cross-platform distribution, ensuring consistent runtime behavior across Linux, macOS, and Windows environments</li>
+                    <li>• Monitored cloud infrastructure health and resource utilization on AWS and GCP, setting up alerts and dashboards to proactively identify and address issues before impacting users</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">GitHub Actions</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Docker</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">AWS</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">GCP</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Kotlin</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">JavaScript</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">TypeScript</span>
+                  </div>
+                </div>
+                <div className="border-t border-border pt-4">
                   <h4 className="text-base font-semibold mb-1">Clarity – See Yourself | Independent iOS Developer</h4>
                   <p className="text-sm font-mono text-code mb-3">Mar 2026</p>
                   <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 mb-3">
