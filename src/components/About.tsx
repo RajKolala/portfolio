@@ -128,9 +128,10 @@ const About = () => {
                 <p className="text-base mb-1">• CCNA</p>
                 <p className="text-base mb-1">• Google</p>
                 <p className="text-base mb-1">• AWS</p>
-                <p className="text-sm font-mono text-code">• Cisco Networking Academy</p>
-                <p className="text-sm font-mono text-code">• Amazon Web Services Academy</p>
-                <p className="text-sm font-mono text-code">• Google Career Certificates</p>
+                <p className="text-sm font-mono text-code">• EC2, IAM governance</p>
+                <p className="text-sm font-mono text-code">• SIEM, Python, Linux</p>
+                <p className="text-sm font-mono text-code">• SQL, Docker, VPC design</p>
+                <p className="text-sm font-mono text-code">• Threat monitoring</p>
               </> : <div className="animate-fade-in space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
