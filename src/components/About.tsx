@@ -63,28 +63,44 @@ const About = () => {
             </div>
             <h3 className="text-lg font-semibold mb-3">Experience</h3>
             {expanded !== 'experience' ? <>
-                <p className="text-base mb-1">Systems & Infrastructure Intern</p>
+                <p className="text-base mb-1">AI & Machine Learning Intern</p>
+                <p className="text-base mb-1">Network Systems & Infrastructure Intern</p>
                 <p className="text-base mb-1">Independent iOS Developer</p>
                 <p className="text-base mb-1">Network Engineering Consultant</p>
-                <p className="text-sm font-mono text-code">Elide · Clarity · Cisco</p>
+                <p className="text-sm font-mono text-code">Jabil · Elide · Clarity · Cisco</p>
               </> : <div className="animate-fade-in space-y-4">
                 <div>
-                  <h4 className="text-base font-semibold mb-1">Systems & Infrastructure Intern</h4>
+                  <h4 className="text-base font-semibold mb-1">AI & Machine Learning Intern</h4>
+                  <p className="text-sm text-muted-foreground mb-1">Jabil | San Jose, CA</p>
+                  <p className="text-sm font-mono text-code mb-3">Aug 2026 - Present</p>
+                  <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 mb-3">
+                    <li>• Building LLM and RAG-powered engineering copilots using LangChain to help manufacturing engineers and operators with process optimization, troubleshooting, and predictive decision making in a live smart manufacturing environment</li>
+                    <li>• Developing data pipelines that ingest, clean, and contextualize high-volume data from legacy manufacturing equipment across proprietary and industrial protocols, normalizing it for use by downstream AI models</li>
+                    <li>• Applying networking and security expertise to enable secure OT/IT data bridging between factory floor systems and cloud analytics infrastructure</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">LangChain</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">RAG</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">LLMs</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Python</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Data Pipelines</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">OT/IT Security</span>
+                  </div>
+                </div>
+                <div className="border-t border-border pt-4">
+                  <h4 className="text-base font-semibold mb-1">Network Systems & Infrastructure Intern</h4>
                   <p className="text-sm text-muted-foreground mb-1">Elide | San Jose, CA</p>
                   <p className="text-sm font-mono text-code mb-3">May 2026 - Aug 2026</p>
                   <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 mb-3">
-                    <li>• Maintained and optimized CI/CD pipelines using GitHub Actions to automate build, test, and validation workflows across Kotlin, Java, JavaScript, and TypeScript targets</li>
-                    <li>• Managed and updated Docker images for cross-platform distribution, ensuring consistent runtime behavior across Linux, macOS, and Windows environments</li>
-                    <li>• Monitored cloud infrastructure health and resource utilization on AWS and GCP, setting up alerts and dashboards to proactively identify and address issues before impacting users</li>
+                    <li>• Deployed a brand new office network for a 20+ person startup from the ground up, handling end-to-end physical cabling, switch and router configuration, and wireless access point setup across the entire facility</li>
+                    <li>• Designed and implemented VLAN segmentation to separate executive and leadership traffic from general staff, enforcing role-based network access control across the organization</li>
+                    <li>• Configured a guest and event network with temporary access control to support visiting engineers and company-hosted events, isolating external traffic from internal systems</li>
                   </ul>
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">GitHub Actions</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Docker</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">AWS</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">GCP</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Kotlin</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">JavaScript</span>
-                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">TypeScript</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Switching & Routing</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">VLAN</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Wireless APs</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded font-mono">Access Control</span>
                   </div>
                 </div>
                 <div className="border-t border-border pt-4">
