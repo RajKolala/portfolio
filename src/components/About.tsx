@@ -90,7 +90,7 @@ const About = () => {
                 <div className="border-t border-border pt-4">
                   <h4 className="text-base font-semibold mb-1">Network Systems & Infrastructure Intern</h4>
                   <p className="text-sm text-muted-foreground mb-1">Elide | San Jose, CA</p>
-                  <p className="text-sm font-mono text-code mb-3">May 2026 - Aug 2026</p>
+                  <p className="text-sm font-mono text-code mb-3">May 2025 - Aug 2025</p>
                   <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 mb-3">
                     <li>• Deployed a brand new office network for a 20+ person startup from the ground up, handling end-to-end physical cabling, switch and router configuration, and wireless access point setup across the entire facility</li>
                     <li>• Designed and implemented VLAN segmentation to separate executive and leadership traffic from general staff, enforcing role-based network access control across the organization</li>
