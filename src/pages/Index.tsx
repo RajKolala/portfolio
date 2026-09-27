@@ -5,9 +5,9 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNod
 // ===== Edit your links here =====
 const LINKS = {
   email: "mailto:raj.kolala10@gmail.com",
-  linkedin: "#", // e.g. https://www.linkedin.com/in/your-handle
-  github: "#", // e.g. https://github.com/your-handle
-  resume: "#", // e.g. /resume.pdf (put the PDF in the public folder)
+  linkedin: "https://www.linkedin.com/in/rajkolala/", // e.g. https://www.linkedin.com/in/your-handle
+  github: "https://github.com/RajKolala", // e.g. https://github.com/your-handle
+  resume: "/Raj_Kolala_Resume.pdf", // e.g. /resume.pdf (put the PDF in the public folder)
 };
 
 const t = (arr: string[]) => arr.map((s) => ({ t: s }));
@@ -21,7 +21,7 @@ const D: Record<string, any> = {
         tags: t(['Networking', 'Cloud', 'AI / ML', 'Security', 'iOS']),
         specs: kv({ Based: 'Bay Area, CA', Graduating: 'May 2027', Now: 'AI & ML Intern, Jabil', Open: 'Network, infrastructure and AI roles' }),
         metrics: [{ v: '5', l: 'industry certifications' }, { v: '4', l: 'engineering roles' }],
-        links: [{ label: 'Email me', href: 'mailto:raj.kolala10@gmail.com' }, { label: 'Download resume', href: '#' }],
+        links: [{ label: 'Email me', href: 'mailto:raj.kolala10@gmail.com' }, { label: 'Download resume', href: '/Raj_Kolala_Resume.pdf' }],
         related: ['jabil', 'clarity', 'certs'] },
       jabil: { short: 'Jabil', via: 'SW-EXPERIENCE', kicker: 'Experience · Current', title: 'AI & Machine Learning Intern', org: 'Jabil · San Jose, CA',
         overview: 'Building AI engineering copilots that help manufacturing engineers and operators make faster, better decisions in a live smart factory, and the data plumbing those copilots depend on.',
@@ -51,7 +51,7 @@ const D: Record<string, any> = {
         tags: t(['React Native', 'Expo', 'WebSocket', 'Node.js', 'EAS Build']),
         specs: kv({ Platform: 'iOS', Released: 'Mar 2026', Status: 'Live, v1.3.2', Role: 'Solo developer' }),
         metrics: [{ v: 'v1.3.2', l: 'current App Store version' }, { v: '12', l: 'updates shipped since launch' }],
-        links: [{ label: 'clarityseeyourself.net', href: 'https://clarityseeyourself.net' }, { label: 'View repo', href: '#' }], related: ['cardio', 'lanint', 'jabil'] },
+        links: [{ label: 'clarityseeyourself.net', href: 'https://clarityseeyourself.net' }, { label: 'View repo', href: 'https://github.com/RajKolala/Clarity---See-Yourself-IOS-App' }], related: ['cardio', 'lanint', 'jabil'] },
       cardio: { short: 'Cardio ML', via: 'SW-SOFTWARE', kicker: 'Software · Completed', title: 'Cardiovascular Disease Classifier', org: 'Group machine learning project',
         overview: 'A binary classifier that predicts cardiovascular disease from patient health records, tuned with cross validated hyperparameter search.',
         listTitle: 'What we built', role: 'Classifier on 70,000 patient records', when: 'Completed',
@@ -59,28 +59,28 @@ const D: Record<string, any> = {
         tags: t(['Python', 'Pandas', 'scikit-learn', 'Random Forest']),
         specs: kv({ Type: 'Group project', Model: 'Random Forest', Status: 'Completed' }),
         metrics: [{ v: '70K', l: 'patient records' }, { v: '73.7%', l: 'accuracy' }],
-        links: [{ label: 'View repo', href: '#' }], related: ['jabil', 'clarity', 'sjsu'] },
+        links: [{ label: 'View repo', href: 'https://github.com/RajKolala/Cardiovascular-Disease-Classifier-' }], related: ['jabil', 'clarity', 'sjsu'] },
       lanint: { short: 'LAN to Internet', via: 'SW-NETPROJECTS', kicker: 'Network project · Active', title: 'LAN to Internet End to End Prototype', org: 'Cisco Packet Tracer',
         overview: 'A realistic model of how traffic travels from a home or small business all the way to a data center, through every tier of ISP in between.',
         listTitle: 'What it models', role: 'Multi tier ISP model, home to data center', when: 'Active',
         bullets: t(['Connects home, SMB and cellular networks to a simulated data center.', 'Routes through Tier 3, Tier 2 and Tier 1 ISPs to mirror real internet hierarchy.']),
         tags: t(['ISP', 'Multi tier', 'Network Architecture']),
         specs: kv({ Tool: 'Cisco Packet Tracer', Status: 'Active', Type: 'Personal project' }),
-        metrics: [], links: [{ label: 'View repo', href: '#' }], related: ['lanisp', 'ipv6', 'elide'] },
+        metrics: [], links: [{ label: 'View repo', href: 'https://github.com/RajKolala/Lan-to-Internet-END-to-END-Prototype' }], related: ['lanisp', 'ipv6', 'elide'] },
       lanisp: { short: 'LAN to ISP', via: 'SW-NETPROJECTS', kicker: 'Network project · Completed', title: 'LAN to ISP Prototype', org: 'Cisco Packet Tracer',
         overview: 'An advanced multi segment prototype of the last mile, showing how different access technologies bring home, business and mobile users onto an ISP.',
         listTitle: 'What it covers', role: 'DSL, cable and fiber last mile design', when: 'Completed',
         bullets: t(['Integrates home, SMB and mobile networks into one topology.', 'Models DSL, cable and fiber last mile systems.', 'Includes full logical and physical topology design.']),
         tags: t(['LAN', 'ISP', 'Last Mile', 'Topology']),
         specs: kv({ Tool: 'Cisco Packet Tracer', Status: 'Completed', Type: 'Personal project' }),
-        metrics: [], links: [{ label: 'View repo', href: '#' }], related: ['lanint', 'ipv6', 'certs'] },
+        metrics: [], links: [{ label: 'View repo', href: 'https://github.com/RajKolala/LAN-to-ISP-Prototype' }], related: ['lanint', 'ipv6', 'certs'] },
       ipv6: { short: 'IPv6 Services', via: 'SW-NETPROJECTS', kicker: 'Network project · Active', title: 'IPv6 Connectivity and Services Prototype', org: '[Tool or environment]',
         overview: '[One or two sentences on the goal of this project and what makes it interesting.]',
         listTitle: 'What I built', role: 'IPv6 connectivity and services', when: 'Active',
         bullets: t(['[Addressing plan and routing protocol used]', '[Services configured, such as DHCPv6 or DNS]', '[What you tested and the result]']),
         tags: t(['IPv6', 'Network Services', 'Protocol']),
         specs: kv({ Tool: '[Tool]', Status: 'Active', Type: 'Personal project' }),
-        metrics: [], links: [{ label: 'View repo', href: '#' }], related: ['lanint', 'lanisp', 'certs'] },
+        metrics: [], links: [{ label: 'View repo', href: 'https://github.com/RajKolala/IPv6-Connectivity-and-Services-Prototype' }], related: ['lanint', 'lanisp', 'certs'] },
       sjsu: { short: 'SJSU', via: 'SW-CREDENTIALS', kicker: 'Education', title: 'Computer Network Systems Management', org: 'San Jose State University · Minor in Business Administration',
         overview: 'Focused on network administration, IoT systems and enterprise network design, with a strong foundation in programming and business operations.',
         listTitle: 'Relevant coursework', role: 'Networking degree, business minor', when: 'Expected May 2027',
