@@ -195,6 +195,21 @@ function Stars({ seed, n, w, h }: { seed: number; n: number; w: number; h: numbe
   );
 }
 
+/* ---------- Full-viewport starfield backdrop (desktop) ---------- */
+function FixedBackdrop() {
+  const [size, setSize] = useState({ w: window.innerWidth, h: window.innerHeight });
+  useEffect(() => {
+    const on = () => setSize({ w: window.innerWidth, h: window.innerHeight });
+    window.addEventListener("resize", on);
+    return () => window.removeEventListener("resize", on);
+  }, []);
+  return (
+    <div aria-hidden="true" style={{ position: "fixed", inset: 0, zIndex: 0, background: "radial-gradient(ellipse 900px 600px at 50% 45%, #1B1036 0%, #0A0716 70%)" }}>
+      <Stars seed={7} n={170} w={size.w} h={size.h} />
+    </div>
+  );
+}
+
 /* ---------- Packet trace (local 460 x 580 box) ---------- */
 function PacketTrace({ onHost }: { onHost: (k: string) => void }) {
   const lab = (x: number, y: number, text: string, color = "#A198BD", left = false): CSSProperties => ({ position: "absolute", left: left ? x : x - 60, top: y, width: 120, textAlign: left ? "left" : "center", fontSize: 11, color });
@@ -502,11 +517,11 @@ export default function Index() {
   return (
     <div className="rk">
       <style>{CSS}</style>
-      <div style={{ width: 1440 * scale, height: 1800 * scale, margin: "0 auto", overflow: "hidden" }}>
+      <FixedBackdrop />
+      <div style={{ position: "relative", zIndex: 1, width: 1440 * scale, height: 1800 * scale, margin: "0 auto", overflow: "hidden" }}>
         <div style={{ position: "relative", width: 1440, height: 1800, transform: `scale(${scale})`, transformOrigin: "top left" }}>
           {/* HERO */}
-          <section id="top" style={{ position: "absolute", left: 0, top: 0, width: 1440, height: 900, overflow: "hidden", background: "radial-gradient(ellipse 900px 600px at 50% 62%, #1B1036 0%, #0A0716 70%)" }}>
-            <Stars seed={7} n={110} w={1440} h={900} />
+          <section id="top" style={{ position: "absolute", left: 0, top: 0, width: 1440, height: 900, overflow: "hidden" }}>
             <div style={{ position: "absolute", left: 540, top: 150 }}><PacketTrace onHost={openHub} /></div>
             <header style={{ position: "absolute", left: 80, right: 80, top: 0, height: 96, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
@@ -517,7 +532,6 @@ export default function Index() {
                 <a href="#top" style={{ color: "#EEEAF8", textDecoration: "none" }}>Home</a>
                 <a href="#map" style={{ color: "#B8AFD0", textDecoration: "none" }}>Topology</a>
                 <a href="#map" onClick={() => setSel("table")} style={{ color: "#B8AFD0", textDecoration: "none" }}>Routing table</a>
-                <a href={LINKS.email} style={{ color: "#B8AFD0", textDecoration: "none" }}>Contact</a>
               </nav>
             </header>
             <div style={{ position: "absolute", left: 80, top: 250, width: 430, display: "flex", flexDirection: "column", gap: 26 }}>
@@ -557,8 +571,7 @@ export default function Index() {
           </section>
 
           {/* TOPOLOGY */}
-          <section id="map" style={{ position: "absolute", left: 0, top: 900, width: 1440, height: 900, overflow: "hidden", background: "radial-gradient(circle 520px at 50% 50%, #170D30 0%, #06040D 75%)", borderTop: "1px solid #221A3C" }}>
-            <Stars seed={21} n={130} w={1440} h={900} />
+          <section id="map" style={{ position: "absolute", left: 0, top: 900, width: 1440, height: 900, overflow: "hidden", borderTop: "1px solid #221A3C" }}>
             <div className="rk-stage" style={{ position: "absolute", inset: 0, transition: "transform .6s ease, filter .6s ease, opacity .6s ease", transform: open ? "scale(.82)" : "none", filter: open ? "blur(3px)" : "none", opacity: open ? 0.45 : 1 }}>
               <svg width="1440" height="900" viewBox="0 0 1440 900" style={{ position: "absolute", inset: 0 }} aria-hidden="true">
                 <ellipse cx="720" cy="490" rx="265" ry="175" fill="none" stroke="#2A2144" />
