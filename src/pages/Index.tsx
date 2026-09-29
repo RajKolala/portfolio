@@ -502,7 +502,7 @@ export default function Index() {
   return (
     <div className="rk">
       <style>{CSS}</style>
-      <div style={{ height: 1800 * scale, overflow: "hidden" }}>
+      <div style={{ width: 1440 * scale, height: 1800 * scale, margin: "0 auto", overflow: "hidden" }}>
         <div style={{ position: "relative", width: 1440, height: 1800, transform: `scale(${scale})`, transformOrigin: "top left" }}>
           {/* HERO */}
           <section id="top" style={{ position: "absolute", left: 0, top: 0, width: 1440, height: 900, overflow: "hidden", background: "radial-gradient(ellipse 900px 600px at 50% 62%, #1B1036 0%, #0A0716 70%)" }}>
