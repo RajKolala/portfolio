@@ -326,6 +326,7 @@ export default function NetworkPortfolio() {
   const [mailOk, setMailOk] = useState(true);
   const [mailKey, setMailKey] = useState(0);
   const [scale, setScale] = useState(1);
+  const [ph, setPh] = useState(0);
 
   const timers = useRef<number[]>([]);
   const mailTimer = useRef<number | undefined>(undefined);
@@ -354,6 +355,12 @@ export default function NetworkPortfolio() {
     fit();
     window.addEventListener("resize", fit);
     return () => window.removeEventListener("resize", fit);
+  }, []);
+
+  // Cycle the console placeholder through the available commands
+  useEffect(() => {
+    const iv = window.setInterval(() => setPh((p) => (p + 1) % QUICK.length), 3000);
+    return () => clearInterval(iv);
   }, []);
 
   useEffect(() => () => {
