@@ -326,7 +326,7 @@ export default function NetworkPortfolio() {
   const [mailOk, setMailOk] = useState(true);
   const [mailKey, setMailKey] = useState(0);
   const [scale, setScale] = useState(1);
-  const [ph, setPh] = useState(0);
+  const [ph, setPh] = useState("");
 
   const timers = useRef<number[]>([]);
   const mailTimer = useRef<number | undefined>(undefined);
@@ -357,10 +357,31 @@ export default function NetworkPortfolio() {
     return () => window.removeEventListener("resize", fit);
   }, []);
 
-  // Cycle the console placeholder through the available commands
+  // Type out and cycle the console placeholder through the available commands
   useEffect(() => {
-    const iv = window.setInterval(() => setPh((p) => (p + 1) % QUICK.length), 3000);
-    return () => clearInterval(iv);
+    let i = 0;
+    let c = 0;
+    let mode: "typing" | "holding" | "deleting" = "typing";
+    let t = 0;
+    const tick = () => {
+      const full = QUICK[i];
+      if (mode === "typing") {
+        c++;
+        setPh(full.slice(0, c));
+        if (c === full.length) { mode = "holding"; t = window.setTimeout(tick, 1700); return; }
+        t = window.setTimeout(tick, 55);
+      } else if (mode === "holding") {
+        mode = "deleting";
+        t = window.setTimeout(tick, 300);
+      } else {
+        c--;
+        setPh(full.slice(0, c));
+        if (c === 0) { i = (i + 1) % QUICK.length; mode = "typing"; t = window.setTimeout(tick, 200); return; }
+        t = window.setTimeout(tick, 28);
+      }
+    };
+    t = window.setTimeout(tick, 400);
+    return () => clearTimeout(t);
   }, []);
 
   useEffect(() => () => {
