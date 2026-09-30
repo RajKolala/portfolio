@@ -819,7 +819,7 @@ export default function NetworkPortfolio() {
             </label>
             <form onSubmit={onSubmit} style={{ flexShrink: 0, display: "flex", alignItems: "center", gap: 10, paddingTop: 12, marginTop: 8, borderTop: "1px solid #e2e1dc" }}>
               <label htmlFor="np-cmd" className="mono" style={{ fontSize: 13, color: "#111111" }}>C:\&gt;</label>
-              <input id="np-cmd" name="cmd" className="cmdin" type="text" onKeyDown={onKey} placeholder={QUICK[ph]} autoComplete="off" spellCheck={false} aria-label="Command" />
+              <input id="np-cmd" name="cmd" className="cmdin" type="text" onKeyDown={onKey} placeholder={ph} autoComplete="off" spellCheck={false} aria-label="Command" />
             </form>
           </section>
 
