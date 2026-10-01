@@ -638,7 +638,7 @@ export default function NetworkPortfolio() {
   const showQuick = !sel || sel === "pc0";
 
   return (
-    <div className="np" style={{ width: "100%", minHeight: "100vh", overflowX: "hidden", display: "flex", justifyContent: "center" }}>
+    <div className="np" style={{ width: "100%", minHeight: "100vh", overflowX: "hidden", display: "flex", justifyContent: "center", alignItems: "center" }}>
       <div style={{ width: W * scale, height: H * scale, flexShrink: 0 }}>
         <div style={{ position: "relative", width: W, height: H, transform: `scale(${scale})`, transformOrigin: "top left", boxSizing: "border-box", padding: "36px 48px 36px", display: "flex", flexDirection: "column", background: "#f6f6f3" }}>
 
