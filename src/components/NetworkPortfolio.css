@@ -51,13 +51,13 @@
 .np .qbtn.dark{color:#111111}
 .np .qbtn:hover,.np .qbtn.dark:hover{color:#ff4f00;transform:scale(1.07);-webkit-text-stroke:0.5px #ff4f00}
 .np .qbtn:focus-visible{outline:1px solid #111111;outline-offset:2px}
-.np .ln{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;line-height:1.65;white-space:pre-wrap;min-height:1.65em;color:#6b6b66}
+.np .ln{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;line-height:1.65;white-space:pre-wrap;min-height:1.65em;color:#3d3d3a;font-weight:500}
 .np .ln.in{color:#111111}
-.np .ln.ok{color:#23794a}
-.np .ln.err{color:#b93a0a}
-.np .ln.head{color:#111111;font-weight:500}
+.np .ln.ok{color:#1d6b3f;font-weight:500}
+.np .ln.err{color:#a33108;font-weight:500}
+.np .ln.head{color:#111111;font-weight:600}
 .np .term{scrollbar-width:thin;scrollbar-color:#d8d7d1 transparent}
-.np .cmdin{flex-grow:1;background:transparent;border:0;outline:none;color:#111111;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;caret-color:#ff4f00;padding:0;min-width:0}
+.np .cmdin{flex-grow:1;background:transparent;border:0;outline:none;color:#111111;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;font-weight:500;caret-color:#ff4f00;padding:0;min-width:0}
 .np .cmdin::placeholder{color:#a3a29c}
 .np .live{width:6px;height:6px;border-radius:50%;background:#2f9e5b;animation:np-blink 1s ease-in-out infinite}
 .np .live.sim{background:#ff4f00;animation:np-blink 1s ease-in-out infinite}
