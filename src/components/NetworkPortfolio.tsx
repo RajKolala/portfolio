@@ -87,11 +87,11 @@ const info: Record<string, any> = {
   jabil: {
     title: 'Jabil', sub: 'AI & Machine Learning Intern', meta: 'Aug 2026 to Present · San Jose, CA',
     bullets: [
-      'Building LLM and RAG-powered engineering copilots using LangChain to help manufacturing engineers and operators with process optimization, troubleshooting, and predictive decision making in a live smart manufacturing environment.',
-      'Developing data pipelines that ingest, clean, and contextualize high-volume data from legacy manufacturing equipment across proprietary and industrial protocols, normalizing it for use by downstream AI models.',
-      'Applying networking and security expertise to enable secure OT/IT data bridging between factory floor systems and cloud analytics infrastructure.'
+      'Designing AI copilots for printed circuit board assembly (PCBA) that ingest a customer\u2019s ODB++ design package and automatically generate manufacturing outputs including solder stencil selections, component sourcing lists, and process flow assessments.',
+      'Building copilot solutions on LLMs and RAG using LangChain, grounding models in IPC standards, component libraries, and past designs to produce outputs that are accurate, explainable, and manufacturable.',
+      'Constructing the retrieval knowledge base and data layer by parsing and normalizing ODB++ files with embeddings and vector search, transforming raw design packages into structured inputs the models can reason over.'
     ],
-    tags: ['LangChain', 'LLM', 'RAG', 'Python', 'Data pipelines', 'OT/IT']
+    tags: ['LangChain', 'LLM', 'RAG', 'ODB++', 'Embeddings', 'Vector search']
   },
   elide: {
     title: 'Elide', sub: 'Network Systems & Infrastructure Intern', meta: 'May 2026 to Aug 2026 · San Jose, CA',
