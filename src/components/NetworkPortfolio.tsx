@@ -80,7 +80,7 @@ const info: Record<string, any> = {
     title: 'Experience', sub: 'Three roles across AI, infrastructure and network consulting.',
     rows: [
       { title: 'Jabil', sub: 'AI & Machine Learning Intern', date: 'Aug 2026 to Present', to: 'jabil', cmd: 'ping jabil' },
-      { title: 'Elide', sub: 'Network Systems & Infrastructure Intern', date: 'May to Aug 2026', to: 'elide', cmd: 'ping elide' },
+      { title: 'Elide', sub: 'Network Systems & Infrastructure Intern', date: 'May to Aug 2025', to: 'elide', cmd: 'ping elide' },
       { title: 'Cisco', sub: 'Network Engineering Consultant', date: 'Jul to Nov 2023', to: 'cisco', cmd: 'ping cisco' }
     ]
   },
@@ -94,7 +94,7 @@ const info: Record<string, any> = {
     tags: ['LangChain', 'LLM', 'RAG', 'ODB++', 'Embeddings', 'Vector search']
   },
   elide: {
-    title: 'Elide', sub: 'Network Systems & Infrastructure Intern', meta: 'May 2026 to Aug 2026 · San Jose, CA',
+    title: 'Elide', sub: 'Network Systems & Infrastructure Intern', meta: 'May 2025 to Aug 2025 · San Jose, CA',
     bullets: [
       'Deployed a brand new office network for a 20+ person startup from the ground up, handling end-to-end physical cabling, switch and router configuration, and wireless access point setup across the entire facility.',
       'Designed and implemented VLAN segmentation to separate executive and leadership traffic from general staff, enforcing role-based network access control across the organization.',
@@ -167,7 +167,7 @@ const info: Record<string, any> = {
     title: 'Certifications', sub: 'Six credentials across networking, security, cloud and data.',
     rows: [
       { title: 'Google Cloud Data Analytics Certificate', sub: 'Google · BigQuery, SQL, Looker, LookML, Cloud Storage, Dataplex, Dataproc', date: 'Sep 2026', desc: '5-course program covering the full cloud data lifecycle: structuring, storing, and governing data in Google Cloud, transforming it with SQL and data pipelines in BigQuery, and building dashboards that tell a clear data story in Looker.' },
-      { title: 'CyberOps Associate', sub: 'Cisco · Linux, Wireshark, Security Onion, SIEM, TCP/IP', date: 'May 2026', desc: 'Security operations center workflows including threat monitoring, incident response, and network intrusion analysis, applied across endpoint security, cryptography, and security policies.' },
+      { title: 'CyberOps Associate', sub: 'Cisco · Linux, Wireshark, Security Onion, SIEM, TCP/IP', date: 'May 2025', desc: 'Security operations center workflows including threat monitoring, incident response, and network intrusion analysis, applied across endpoint security, cryptography, and security policies.' },
       { title: 'Cybersecurity Professional Certificate', sub: 'Google · SQL, Linux, SIEM', date: 'Nov 2025', desc: '9-course program on enterprise threat detection, incident response, and network defense, applying NIST, MITRE ATT&CK, and OWASP frameworks for vulnerability assessments, log analysis, and incident remediation.' },
       { title: 'Cloud Architecting', sub: 'AWS Academy · EC2, S3, RDS, DynamoDB, Lambda, VPC', date: 'Nov 2025', desc: 'VPC design, compute and storage services (EC2, Lambda, S3), and IAM governance across distributed cloud systems.' },
       { title: 'CCNA: Enterprise Networking, Security, and Automation', sub: 'Cisco · Cisco IOS, Packet Tracer, OSPF, ACLs, NAT, IPsec VPN, QoS, SNMP, REST APIs', date: 'Mar 2025', desc: 'Designed and secured enterprise networks with single-area OSPFv2, access control lists, NAT/PAT, and site-to-site VPNs; covered QoS, network management with SNMP, Syslog, and NTP, and network automation through SDN, REST APIs, and configuration management tools.' },
