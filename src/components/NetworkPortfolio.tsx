@@ -60,7 +60,7 @@ const words: string[] = ['experience', 'jabil', 'elide', 'cisco', 'projects', 'c
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const info: Record<string, any> = {
   core: {
-    title: 'Raj Kolala', sub: 'Computer Network Engineer', meta: 'San Jose, CA',
+    title: 'Raj Kolala', sub: 'Computer Network and Software Engineer', meta: 'San Jose, CA',
     text: 'Computer Network Systems Management student at San Jose State University with a minor in Business Administration, graduating May 2027. Currently an AI & Machine Learning Intern at Jabil, previously a Network Systems & Infrastructure Intern at Elide and a Network Engineering Consultant at Cisco. Certified in CCNA, Cisco CyberOps, Google Cybersecurity and AWS Cloud Architecting.',
     rows: [
       { title: 'Experience', sub: 'Jabil, Elide, Cisco', date: '3 roles', to: 'swexp', cmd: 'ping experience' },
@@ -498,7 +498,7 @@ export default function NetworkPortfolio() {
       return;
     }
     if (c === "clear" || c === "cls") { setLines([]); return; }
-    if (c === "whoami") { print([{ text: "raj.kolala  Computer Network Engineer · SJSU, May 2027 · San Jose, CA", kind: "out" }, { text: "", kind: "out" }]); return; }
+    if (c === "whoami") { print([{ text: "raj.kolala  Computer Network and Software Engineer · SJSU, May 2027 · San Jose, CA", kind: "out" }, { text: "", kind: "out" }]); return; }
     if (c === "ipconfig") {
       print([
         { text: "Ethernet adapter FastEthernet0:", kind: "out" },
@@ -631,7 +631,7 @@ export default function NetworkPortfolio() {
         rows: (x.rows || []) as { title: string; sub: string; date: string; desc?: string; to?: string; cmd?: string }[],
       }
     : {
-        kicker: "PC0", addr: "192.168.1.10", title: "Hi, I\u2019m Raj.", sub: "Computer Network Engineer based in San Jose, CA.", meta: "",
+        kicker: "PC0", addr: "192.168.1.10", title: "Hi, I\u2019m Raj.", sub: "Computer Network and Software Engineer based in San Jose, CA.", meta: "",
         text: "This portfolio is a live network. Every section of my resume is a device on the topology. Ping one from the console below and a packet will travel across the links to open it.",
         reply: "", repo: "", resume: false, bullets: [], tags: [], groups: [], links: [], rows: [],
       };
@@ -645,7 +645,7 @@ export default function NetworkPortfolio() {
           <header style={{ height: 72, flexShrink: 0, display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 24, borderBottom: "1px solid #111111" }}>
             <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
               <h1 style={{ margin: 0, fontSize: 28, lineHeight: 1.1, fontWeight: 500, letterSpacing: "-0.02em", color: "#111111" }}>Raj Kolala</h1>
-              <p style={{ margin: 0, fontSize: 15, color: "#6b6b66" }}>Computer Network Engineer, San Jose</p>
+              <p style={{ margin: 0, fontSize: 15, color: "#6b6b66" }}>Computer Network and Software Engineer, San Jose</p>
             </div>
             <nav style={{ display: "flex", alignItems: "center", gap: 28 }} aria-label="Links">
               <a className="hdl" href="https://linkedin.com/in/rajkolala" target="_blank" rel="noopener noreferrer">LinkedIn</a>
