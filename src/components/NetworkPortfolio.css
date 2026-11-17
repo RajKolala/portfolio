@@ -110,11 +110,36 @@
 @keyframes np-show{from{opacity:0}to{opacity:1}}
 .np .hdl{display:inline-block;font-size:14px;color:#111111;padding:8px 0;transition:color .15s,transform .15s,-webkit-text-stroke .15s}
 .np .hdl:hover{color:#ff4f00;text-decoration:none;transform:scale(1.07);-webkit-text-stroke:0.5px #ff4f00}
-.np .workspace{display:grid;grid-template-columns:380px minmax(0,1fr);grid-template-rows:596px minmax(0,1fr);column-gap:24px;flex:1;min-height:0}
-.np .topology{grid-column:2;grid-row:1}
-.np .details{grid-column:2;grid-row:2;min-height:0;overflow-y:auto;box-sizing:border-box;border-top:1px solid hsl(var(--portfolio-divider))}
-.np .console-left{grid-column:1;grid-row:1 / 3;min-height:0;min-width:0;display:flex;flex-direction:column;padding:20px 24px 0 0;border-right:1px solid hsl(var(--portfolio-divider))}
+.np .portfolio-frame{width:100%;max-width:1440px;margin:0 auto;box-sizing:border-box;padding:28px 32px}
+.np .portfolio-content{position:relative}
+.np .workspace{display:grid;grid-template-columns:340px minmax(0,1fr);grid-template-rows:auto auto;column-gap:24px;align-items:start}
+.np .topology{grid-column:2;grid-row:1;position:relative;min-width:0;overflow-x:auto;overflow-y:hidden}
+.np .details{grid-column:2;grid-row:2;min-width:0;box-sizing:border-box;border-top:1px solid hsl(var(--portfolio-divider))}
+.np .console-left{grid-column:1;grid-row:1 / 3;position:sticky;top:24px;height:calc(100vh - 150px);min-height:400px;max-height:900px;min-width:0;box-sizing:border-box;display:flex;flex-direction:column;padding:20px 24px 0 0;border-right:1px solid hsl(var(--portfolio-divider))}
 .np .console-heading{display:flex;flex-direction:column;gap:12px;flex-shrink:0;padding-bottom:20px}
 .np .console-shortcuts{display:flex;flex-wrap:wrap;gap:4px 18px}
 .np .console-left .ln{font-size:18px;overflow-wrap:anywhere}
 .np .console-left .cmdin,.np .console-prefix{font-size:18px;color:hsl(var(--portfolio-ink))}
+.np .cap,.np .qbtn,.np .chip,.np .bl li::before{font-size:14px;font-weight:500;color:hsl(var(--portfolio-muted))}
+.np .host{font-size:20px;font-weight:500}
+.np .nm{font-size:20px;font-weight:500;color:hsl(var(--portfolio-muted))}
+.np .lbl{width:160px}
+.np .lp-ne .lbl{top:-10px}
+.np .lp-below .lbl,.np .lp-above .lbl{left:-54px}
+.np .details p,.np .details .row span{font-size:18px!important;color:hsl(var(--portfolio-ink))!important;line-height:1.65!important}
+.np .details p.mono,.np .details .row .mono{font-size:14px!important;color:hsl(var(--portfolio-muted))!important}
+.np .bl li{font-size:18px;color:hsl(var(--portfolio-ink))}
+.np .hdl{font-size:16px;font-weight:500}
+.np header p{font-size:17px!important;color:hsl(var(--portfolio-muted))!important}
+.np header{height:auto!important;min-height:72px;flex-wrap:wrap;padding-bottom:20px}
+.np header nav{flex-wrap:wrap;gap:20px!important}
+.np .cmdin::placeholder{color:hsl(var(--portfolio-muted))}
+.np .topology>div:not(:last-child){color:hsl(var(--portfolio-muted))!important;font-size:14px!important}
+@media(max-width:760px){
+ .np .portfolio-frame{padding:24px 18px}
+ .np .workspace{grid-template-columns:minmax(0,1fr);gap:24px}
+ .np .console-left{grid-column:1;grid-row:1;position:static;height:480px;min-height:0;padding:20px 0;border-right:0;border-bottom:1px solid hsl(var(--portfolio-divider))}
+ .np .topology{grid-column:1;grid-row:2}
+ .np .details{grid-column:1;grid-row:3}
+ .np .host,.np .nm{font-size:16px}
+}

@@ -6,8 +6,6 @@ import "./NetworkPortfolio.css";
 
 const RESUME_URL = "/Raj_Kolala_Resume.pdf";
 const EMAIL = "rajkolala10@gmail.com";
-const W = 1440;
-const H = 1016;
 
 type Dev = {
   id: string; host: string; name: string; type: string; ip: string;
@@ -325,7 +323,8 @@ export default function NetworkPortfolio() {
   const [mailOpen, setMailOpen] = useState(false);
   const [mailOk, setMailOk] = useState(true);
   const [mailKey, setMailKey] = useState(0);
-  const [scale, setScale] = useState(1);
+  const [topologyScale, setTopologyScale] = useState(1);
+  const topologyRef = useRef<HTMLElement | null>(null);
   const [ph, setPh] = useState("");
 
   const timers = useRef<number[]>([]);
@@ -344,17 +343,16 @@ export default function NetworkPortfolio() {
     document.head.appendChild(l);
   }, []);
 
-  // Scale the fixed 1440 x 1016 layout to fit the window
+  // Only fit the topology; text and controls keep their readable native size.
   useEffect(() => {
-    const fit = () => {
-      const w = window.innerWidth;
-      const h = window.innerHeight;
-      const s = w < 900 ? w / W : Math.min(w / W, h / H);
-      setScale(Math.min(s, 1.4));
-    };
-    fit();
-    window.addEventListener("resize", fit);
-    return () => window.removeEventListener("resize", fit);
+    const element = topologyRef.current;
+    if (!element) return;
+    const observer = new ResizeObserver(([entry]) => {
+      if (!entry) return;
+      setTopologyScale(window.innerWidth <= 760 ? 1 : Math.min(entry.contentRect.width / 940, 1));
+    });
+    observer.observe(element);
+    return () => observer.disconnect();
   }, []);
 
   // Type out and cycle the console placeholder through the available commands
@@ -638,9 +636,9 @@ export default function NetworkPortfolio() {
   const showQuick = !sel || sel === "pc0";
 
   return (
-    <div className="np" style={{ width: "100%", minHeight: "100vh", overflowX: "hidden", display: "flex", justifyContent: "center", alignItems: "center" }}>
-      <div style={{ width: W * scale, height: H * scale, flexShrink: 0 }}>
-        <div style={{ position: "relative", width: W, height: H, transform: `scale(${scale})`, transformOrigin: "top left", boxSizing: "border-box", padding: "36px 48px 36px", display: "flex", flexDirection: "column", background: "#f6f6f3" }}>
+    <div className="np">
+      <div className="portfolio-frame">
+        <div className="portfolio-content">
 
           <header style={{ height: 72, flexShrink: 0, display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 24, borderBottom: "1px solid #111111" }}>
             <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
@@ -660,10 +658,9 @@ export default function NetworkPortfolio() {
           </header>
 
           <div className="workspace">
-            <section aria-label="Network topology" className="topology" style={{ position: "relative", width: 940, height: 596, flexShrink: 0 }}>
+            <section ref={topologyRef} aria-label="Network topology" className="topology" style={{ height: 596 * topologyScale }}>
               <div className="cap" style={{ position: "absolute", left: 8, top: 20 }}>Topology</div>
-              <div style={{ position: "absolute", left: 8, bottom: 16, fontSize: 12, color: "#6b6b66" }}>Click a device, or ping it from the console.</div>
-              <div style={{ position: "absolute", left: 0, top: 8, width: 940, height: 580 }}>
+              <div style={{ position: "absolute", left: 0, top: 8, width: 940, height: 580, transform: `scale(${topologyScale})`, transformOrigin: "top left" }}>
                 {segs.map((s, i) => (
                   <div key={"s" + i} className={"seg" + (s.on ? " lit" : "")} style={{ left: s.l, top: s.t, width: s.w, height: s.h }} />
                 ))}

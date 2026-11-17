@@ -1,3 +1,3 @@
 # Architecture rules
 
-- Keep the command prompt in the left column of the fixed portfolio canvas, with topology and scrollable details in the right column; preserve topology coordinates so packet paths remain aligned.
+- Keep the command prompt on the left on desktop and first on mobile; use a fluid page without scaling text, fitting only the topology while preserving its coordinates so packet paths remain aligned.

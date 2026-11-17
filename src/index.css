@@ -10,6 +10,7 @@ All colors MUST be HSL.
   :root {
     --portfolio-divider: 50 9% 87%;
     --portfolio-ink: 0 0% 7%;
+    --portfolio-muted: 0 0% 27%;
     --background: 220 20% 8%;
     --foreground: 0 0% 95%;
 
