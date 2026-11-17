@@ -118,19 +118,20 @@
 .np .console-left{grid-column:1;grid-row:1 / 3;position:sticky;top:24px;height:calc(100vh - 150px);min-height:400px;max-height:900px;min-width:0;box-sizing:border-box;display:flex;flex-direction:column;padding:20px 24px 0 0;border-right:1px solid hsl(var(--portfolio-divider))}
 .np .console-heading{display:flex;flex-direction:column;gap:12px;flex-shrink:0;padding-bottom:20px}
 .np .console-shortcuts{display:flex;flex-wrap:wrap;gap:4px 18px}
-.np .console-left .ln{font-size:18px;overflow-wrap:anywhere}
-.np .console-left .cmdin,.np .console-prefix{font-size:18px;color:hsl(var(--portfolio-ink))}
-.np .cap,.np .qbtn,.np .chip,.np .bl li::before{font-size:14px;font-weight:500;color:hsl(var(--portfolio-muted))}
-.np .host{font-size:20px;font-weight:500}
-.np .nm{font-size:20px;font-weight:500;color:hsl(var(--portfolio-muted))}
+.np .console-left .ln{font-size:15px;overflow-wrap:anywhere}
+.np .console-left .cmdin,.np .console-prefix{font-size:15px;color:hsl(var(--portfolio-ink))}
+.np .cap,.np .qbtn,.np .chip,.np .bl li::before{font-size:12px;font-weight:500;color:hsl(var(--portfolio-muted))}
+.np .host{font-size:16px;font-weight:500}
+.np .nm{font-size:16px;font-weight:500;color:hsl(var(--portfolio-muted))}
 .np .lbl{width:160px}
 .np .lp-ne .lbl{top:-10px}
 .np .lp-below .lbl,.np .lp-above .lbl{left:-54px}
-.np .details p,.np .details .row span{font-size:18px!important;color:hsl(var(--portfolio-ink))!important;line-height:1.65!important}
-.np .details p.mono,.np .details .row .mono{font-size:14px!important;color:hsl(var(--portfolio-muted))!important}
-.np .bl li{font-size:18px;color:hsl(var(--portfolio-ink))}
-.np .hdl{font-size:16px;font-weight:500}
-.np header p{font-size:17px!important;color:hsl(var(--portfolio-muted))!important}
+.np .details p,.np .details .row span{font-size:15px!important;color:hsl(var(--portfolio-ink))!important;line-height:1.65!important}
+.np .details p.mono,.np .details .row .mono{font-size:12px!important;color:hsl(var(--portfolio-muted))!important}
+.np .details h2{font-size:26px!important}
+.np .bl li{font-size:15px;color:hsl(var(--portfolio-ink))}
+.np .hdl{font-size:14px;font-weight:500}
+.np header p{font-size:15px!important;color:hsl(var(--portfolio-muted))!important}
 .np header{height:auto!important;min-height:72px;flex-wrap:wrap;padding-bottom:20px}
 .np header nav{flex-wrap:wrap;gap:20px!important}
 .np .cmdin::placeholder{color:hsl(var(--portfolio-muted))}
