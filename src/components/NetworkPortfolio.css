@@ -110,3 +110,11 @@
 @keyframes np-show{from{opacity:0}to{opacity:1}}
 .np .hdl{display:inline-block;font-size:14px;color:#111111;padding:8px 0;transition:color .15s,transform .15s,-webkit-text-stroke .15s}
 .np .hdl:hover{color:#ff4f00;text-decoration:none;transform:scale(1.07);-webkit-text-stroke:0.5px #ff4f00}
+.np .workspace{display:grid;grid-template-columns:380px minmax(0,1fr);grid-template-rows:596px minmax(0,1fr);column-gap:24px;flex:1;min-height:0}
+.np .topology{grid-column:2;grid-row:1}
+.np .details{grid-column:2;grid-row:2;min-height:0;overflow-y:auto;box-sizing:border-box;border-top:1px solid hsl(var(--portfolio-divider))}
+.np .console-left{grid-column:1;grid-row:1 / 3;min-height:0;min-width:0;display:flex;flex-direction:column;padding:20px 24px 0 0;border-right:1px solid hsl(var(--portfolio-divider))}
+.np .console-heading{display:flex;flex-direction:column;gap:12px;flex-shrink:0;padding-bottom:20px}
+.np .console-shortcuts{display:flex;flex-wrap:wrap;gap:4px 18px}
+.np .console-left .ln{font-size:18px;overflow-wrap:anywhere}
+.np .console-left .cmdin,.np .console-prefix{font-size:18px;color:hsl(var(--portfolio-ink))}

@@ -194,7 +194,7 @@ const info: Record<string, any> = {
   },
   pc0: {
     title: 'This is you', sub: 'PC0, the workstation every ping starts from.',
-    text: 'Type a command in the console below, or click any device on the topology. Each ping sends a packet across the network and opens the resume item it reaches.'
+    text: 'Type a command in the console on the left, or click any device on the topology. Each ping sends a packet across the network and opens the resume item it reaches.'
   }
 };
 const typeName: Record<string, string> = { router: 'ROUTER', switch: 'SWITCH', pc: 'PC', server: 'SERVER', phone: 'SMARTPHONE', laptop: 'LAPTOP', cloud: 'CLOUD', firewall: 'FIREWALL', ap: 'ACCESS POINT' };
@@ -632,7 +632,7 @@ export default function NetworkPortfolio() {
       }
     : {
         kicker: "PC0", addr: "192.168.1.10", title: "Hi, I\u2019m Raj.", sub: "Computer Network and Software Engineer based in San Jose, CA.", meta: "",
-        text: "This portfolio is a live network. Every section of my resume is a device on the topology. Ping one from the console below and a packet will travel across the links to open it.",
+        text: "This portfolio is a live network. Every section of my resume is a device on the topology. Ping one from the console on the left and a packet will travel across the links to open it.",
         reply: "", repo: "", resume: false, bullets: [], tags: [], groups: [], links: [], rows: [],
       };
   const showQuick = !sel || sel === "pc0";
@@ -659,8 +659,8 @@ export default function NetworkPortfolio() {
             </nav>
           </header>
 
-          <div style={{ height: 596, flexShrink: 0, display: "flex", borderBottom: "1px solid #e2e1dc" }}>
-            <section aria-label="Network topology" style={{ position: "relative", width: 940, height: 596, flexShrink: 0, marginLeft: -8 }}>
+          <div className="workspace">
+            <section aria-label="Network topology" className="topology" style={{ position: "relative", width: 940, height: 596, flexShrink: 0 }}>
               <div className="cap" style={{ position: "absolute", left: 8, top: 20 }}>Topology</div>
               <div style={{ position: "absolute", left: 8, bottom: 16, fontSize: 12, color: "#6b6b66" }}>Click a device, or ping it from the console.</div>
               <div style={{ position: "absolute", left: 0, top: 8, width: 940, height: 580 }}>
@@ -694,8 +694,8 @@ export default function NetworkPortfolio() {
               </div>
             </section>
 
-            <aside className="panel" aria-live="polite" style={{ flexGrow: 1, height: 596, boxSizing: "border-box", overflowY: "auto", borderLeft: "1px solid #e2e1dc" }}>
-              <div key={pn} className={"pin" + (pn % 2)} style={{ padding: "20px 0 40px 40px", display: "flex", flexDirection: "column", gap: 28 }}>
+            <aside className="panel details" aria-live="polite">
+              <div key={pn} className={"pin" + (pn % 2)} style={{ padding: "20px 0 24px", display: "flex", flexDirection: "column", gap: 20 }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                   <div className="cap" style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
                     <span style={{ color: "#111111" }}>{pv.kicker}</span>
@@ -803,12 +803,11 @@ export default function NetworkPortfolio() {
                 )}
               </div>
             </aside>
-          </div>
 
-          <section aria-label="Command prompt" style={{ flexGrow: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>
-            <div style={{ height: 44, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
+          <section aria-label="Command prompt" className="console-left">
+            <div className="console-heading">
               <span className="cap">Console</span>
-              <div style={{ display: "flex", gap: 20 }}>
+              <div className="console-shortcuts">
                 {QUICK.map((q) => <button key={q} className="qbtn" onClick={() => run(q)}>{q}</button>)}
               </div>
             </div>
@@ -818,10 +817,11 @@ export default function NetworkPortfolio() {
               </div>
             </label>
             <form onSubmit={onSubmit} style={{ flexShrink: 0, display: "flex", alignItems: "center", gap: 10, paddingTop: 12, marginTop: 8, borderTop: "1px solid #e2e1dc" }}>
-              <label htmlFor="np-cmd" className="mono" style={{ fontSize: 13, color: "#111111" }}>C:\&gt;</label>
+              <label htmlFor="np-cmd" className="mono console-prefix">C:\&gt;</label>
               <input id="np-cmd" name="cmd" className="cmdin" type="text" onKeyDown={onKey} placeholder={ph} autoComplete="off" spellCheck={false} aria-label="Command" />
             </form>
           </section>
+          </div>
 
           {mailOpen && (
             <div key={mailKey} className="mwrap" role="dialog" aria-modal="true" aria-label="Email copied">

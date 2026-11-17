@@ -8,6 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    --portfolio-divider: 50 9% 87%;
+    --portfolio-ink: 0 0% 7%;
     --background: 220 20% 8%;
     --foreground: 0 0% 95%;
 
